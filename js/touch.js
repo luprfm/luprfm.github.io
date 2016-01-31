@@ -15,7 +15,7 @@ $(function(){
             // 経度
             lat = evt.coords.latitude;
 
-            
+
         },
         function(error){
         console.log('GPSとれなかったよー');
@@ -33,13 +33,15 @@ $(function(){
     });
 
     $('#ball').on('touchend',function(){
-        $('#touchResult li').eq(2).text('touchend したよ')
+        $('#touchResult li').eq(2).text('touchend したよ');
+
+        $('#geo li').eq(0).text('緯度: ' + lon);
+        $('#geo li').eq(1).text('経度: ' + lat);
+
     });
 
 
 
-    $('#geo li').eq(0).text('緯度: ' + lon);
-    $('#geo li').eq(1).text('経度: ' + lat);
 
 
 
