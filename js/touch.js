@@ -11,17 +11,13 @@ $(function(){
     navigator.geolocation.getCurrentPosition(
         function(evt){
             // 緯度
-            var lon = evt.coords.longitude;
+            lon = evt.coords.longitude;
             // 経度
-            var lat = evt.coords.latitude;
+            lat = evt.coords.latitude;
         },
         function(error){
         console.log('GPSとれなかったよー');
     });
-
-
-
-
 
 
 
