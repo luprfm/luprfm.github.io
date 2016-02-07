@@ -31,7 +31,7 @@ $(function(){
 
         function showVege(){
             //スプライトシートの設定
-            var vcSprite = new createjs.SpriteSheet(vitaminCsprite);
+            var vcSprite = new createjs.SpriteSheet(vitaminCSprite);
             //スプライトの設定
             var vitaminC = new createjs.Sprite(vcSprite,'stand');
             stage.addChild(vitaminC);
