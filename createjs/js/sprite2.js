@@ -66,14 +66,8 @@ $(function(){
             iron.y = 480;
             iron.alpha = 0;
 
-
-
-
             //アニメーション
             createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:350},8000).call(ironStand);
-
-
-
 
             //ironが歩く
             function ironWalk(){
@@ -84,6 +78,37 @@ $(function(){
             //ironが止まる
             function ironStand(){
                 iron.gotoAndPlay('stand');
+            }
+
+
+
+
+
+            //スプライトシートの設定
+            var calciumSprite = new createjs.SpriteSheet(calcium);
+            //スプライトの設定
+            var calcium = new createjs.Sprite(calciumSprite,'stand');
+            stage.addChild(calcium);
+            calcium.x = 250;
+            calcium.y = 480;
+            calcium.alpha = 0;
+
+
+
+            //アニメーション
+            createjs.Tween.get(calcium).to({alpha:1},500).wait(1000).call(calciumWalk).to({x:600},2000).call(calciumStand);
+
+
+
+            //calciumが歩く
+            function calciumWalk(){
+                calcium.gotoAndPlay('walk');
+                //.gotoAndPlay スプライトを走らせる命令
+            }
+
+            //calciumが止まる
+            function calciumStand(){
+                calcium.gotoAndPlay('stand');
             }
 
 
