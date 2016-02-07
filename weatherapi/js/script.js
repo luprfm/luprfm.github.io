@@ -43,7 +43,7 @@ $(function(){
             $('#areaHumidity').text(areaHumidity + '%');
 
             // 天気
-            var areaWeather = data.weather[0].discription;
+            var areaWeather = data.weather[0].description;
             $('#areaWeather').text(areaWeather);
 
             // 天気アイコン
