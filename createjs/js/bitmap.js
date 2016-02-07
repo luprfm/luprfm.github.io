@@ -39,6 +39,9 @@ $(function(){
             pumpkin.y = 100;
             stage.addChild(pumpkin);
 
+
+            stage.update();
+
         };
 
 
