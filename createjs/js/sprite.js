@@ -30,53 +30,27 @@ $(function(){
 
 
         function showVege(){
-            // //スプライトシートの設定
-            // var vcSprite = new createjs.SpriteSheet(vitaminCsprite);
-            // //スプライトの設定
-            // var vitaminC = new createjs.Sprite(vcSprite,'stand');
-            // stage.addChild(vitaminC);
-            // vitaminC.x = 150;
-            // vitaminC.y = 480;
-            // vitaminC.alpha = 0;
-            //
-            // //アニメーション
-            // createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).call(vitaminCWalk).to({x:500},4000).call(vitaminCStand);
-            //
-            // //ビタミンCが歩く
-            // function vitaminCWalk(){
-            //     vitaminC.gotoAndPlay('walk');
-            //     //.gotoAndPlay スプライトを走らせる命令
-            // }
-            //
-            // //ビタミンCが止まる
-            // function vitaminCStand(){
-            //     vitaminC.gotoAndPlay('stand');
-            // }
-            //
-
-
-            //ironのアニメーション
-
             //スプライトシートの設定
-            var irSprite = new createjs.SpriteSheet(ironsprite);
+            var vcSprite = new createjs.SpriteSheet(vitaminCsprite);
             //スプライトの設定
-            var iron = new createjs.Sprite(irSprite,'stand');
-            stage.addChild(iron);
-            iron.x = 150;
-            iron.y = 600;
-            iron.alpha = 0;
+            var vitaminC = new createjs.Sprite(vcSprite,'stand');
+            stage.addChild(vitaminC);
+            vitaminC.x = 150;
+            vitaminC.y = 480;
+            vitaminC.alpha = 0;
 
-            //ironが動く命令
-            createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:500},6000).call(ironStand);
+            //アニメーション
+            createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).call(vitaminCwalk).to({x:500},4000).call(vitaminCStand);
 
-
-            //ironが歩く
-            function ironWalk(){
-                iron.gotoAndplay('walk');
+            //ビタミンCが歩く
+            function vitaminCWalk(){
+                vitaminC.gotoAndPlay('walk');
+                //.gotoAndPlay スプライトを走らせる命令
             }
-            //ironが止まる
-            function ironStand(){
-                iron.gotoAndPlay('stand');
+
+            //ビタミンCが止まる
+            function vitaminCStand(){
+                vitaminC.gotoAndPlay('stand');
             }
 
 
