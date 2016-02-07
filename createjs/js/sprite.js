@@ -58,7 +58,7 @@ $(function(){
             //ironのアニメーション
 
             //スプライトシートの設定
-            var ironSprite = new createjs.SpriteSheet(ironsprite);
+            var ironSprite = new createjs.SpriteSheet(ironSprite);
             //スプライトの設定
             var iron = new createjs.Sprite(ironSprite,'stand');
             stage.addChild(iron);
