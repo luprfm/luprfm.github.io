@@ -17,7 +17,7 @@ $(function(){
 
 
         //loadQueue（ロードキュー）ローディングの設定
-        var loadQueue = new createjs.loadQueue();
+        var loadQueue = new createjs.LoadQueue();
         loadQueue.loadManifest(manifest); //読み込み開始
 
 
