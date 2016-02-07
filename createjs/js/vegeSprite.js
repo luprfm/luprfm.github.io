@@ -4,5 +4,5 @@ var vitaminCsprite = {
     animations:{
         stand:34,
         walk:[0,33]
-    }
-}
+    };
+};
