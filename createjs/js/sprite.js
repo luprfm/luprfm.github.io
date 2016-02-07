@@ -54,6 +54,32 @@ $(function(){
             }
 
 
+
+            //ironのアニメーション
+
+            //スプライトシートの設定
+            var ironSprite = new createjs.SpriteSheet(ironsprite);
+            //スプライトの設定
+            var iron = new createjs.Sprite(ironSprite,'stand');
+            stage.addChild(iron);
+            iron.x = 150;
+            iron.y = 600;
+            iron.alpha = 0;
+
+            //ironが動く命令
+            createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:500},6000).call(ironStand);
+
+
+            //ironが歩く
+            function ironWalk(){
+                iron.gotoAndplay('walk');
+            }
+            //ironが止まる
+            function ironStand(){
+                iron.gotoAndPlay('stand');
+            }
+
+
             stage.update();
 
         };
