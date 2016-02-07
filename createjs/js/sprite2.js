@@ -70,7 +70,7 @@ $(function(){
 
 
             //アニメーション
-            createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:450},8000).call(ironStand);
+            createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:400},8000).call(ironStand);
 
 
 
