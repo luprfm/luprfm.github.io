@@ -63,7 +63,7 @@ $(function(){
             var iron = new createjs.Sprite(ironSprite,'stand');
             stage.addChild(iron);
             iron.x = 30;
-            iron.y = 480;
+            iron.y = 400;
             iron.alpha = 0;
 
 
