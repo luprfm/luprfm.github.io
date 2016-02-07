@@ -96,7 +96,7 @@ $(function(){
 
 
             //アニメーション
-            createjs.Tween.get(calcium).to({alpha:1},500).wait(1000).call(calciumWalk).to({x:600},2000).call(calciumStand);
+            createjs.Tween.get(calcium).to({alpha:1},500).wait(1000).call(calciumWalk).to({x:200},8000).call(calciumStand);
 
 
 
