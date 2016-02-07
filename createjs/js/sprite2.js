@@ -89,14 +89,14 @@ $(function(){
             //スプライトの設定
             var calcium = new createjs.Sprite(calciumSprite,'stand');
             stage.addChild(calcium);
-            calcium.x = 250;
+            calcium.x = 50;
             calcium.y = 480;
             calcium.alpha = 0;
 
 
 
             //アニメーション
-            createjs.Tween.get(calcium).to({alpha:1},500).wait(1000).call(calciumWalk).to({x:200},8000).call(calciumStand);
+            createjs.Tween.get(calcium).to({alpha:1},500).wait(1000).call(calciumWalk).to({x:300},8000).call(calciumStand);
 
 
 
