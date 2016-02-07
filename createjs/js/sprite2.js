@@ -62,7 +62,7 @@ $(function(){
             //スプライトの設定
             var iron = new createjs.Sprite(ironSprite,'stand');
             stage.addChild(iron);
-            iron.x = 150;
+            iron.x = 30;
             iron.y = 480;
             iron.alpha = 0;
 
