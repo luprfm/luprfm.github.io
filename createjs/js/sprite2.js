@@ -63,14 +63,14 @@ $(function(){
             var iron = new createjs.Sprite(ironSprite,'stand');
             stage.addChild(iron);
             iron.x = 30;
-            iron.y = 400;
+            iron.y = 480;
             iron.alpha = 0;
 
 
 
 
             //アニメーション
-            createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:500},8000).call(ironStand);
+            createjs.Tween.get(iron).to({alpha:1},500).wait(1000).call(ironWalk).to({x:450},8000).call(ironStand);
 
 
 
