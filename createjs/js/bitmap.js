@@ -35,13 +35,13 @@ $(function(){
             stage.addChild(tomato);
 
             var pumpkin = new createjs.Bitmap(manifest[1].src);
-            pumpkin.x = 250;
-            pumpkin.y = 100;
+            pumpkin.x = 200;
+            pumpkin.y = 200;
             stage.addChild(pumpkin);
 
             var hourensou = new createjs.Bitmap(manifest[2].src);
-            hourensou.x = 600;
-            hourensou.y = 100;
+            hourensou.x = 300;
+            hourensou.y = 300;
             stage.addChild(hourensou);
 
             stage.update();
