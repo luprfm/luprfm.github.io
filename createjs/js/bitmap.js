@@ -27,6 +27,11 @@ $(function(){
         });
 
 
+        loadQueue.addEventListener('progress',function(evt){
+            console.log(evt.progress); //読み込み状況を0〜1で表示
+        });
+
+
 
         function showVege(){
             var tomato = new createjs.Bitmap(manifest[0].src);
