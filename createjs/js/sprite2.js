@@ -85,7 +85,7 @@ $(function(){
 
 
             //スプライトシートの設定
-            var calciumSprite = new createjs.SpriteSheet(calcium);
+            var calciumSprite = new createjs.SpriteSheet(calciumsprite);
             //スプライトの設定
             var calcium = new createjs.Sprite(calciumSprite,'stand');
             stage.addChild(calcium);
