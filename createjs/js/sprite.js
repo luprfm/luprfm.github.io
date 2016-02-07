@@ -31,7 +31,7 @@ $(function(){
 
         function showVege(){
             //スプライトシートの設定
-            var vcSprite = new createjs.SpriteSheet(vitaminCSprite);
+            var vcSprite = new createjs.SpriteSheet(vitaminCsprite);
             //スプライトの設定
             var vitaminC = new createjs.Sprite(vcSprite,'stand');
             stage.addChild(vitaminC);
@@ -58,7 +58,7 @@ $(function(){
             //ironのアニメーション
 
             //スプライトシートの設定
-            var irSprite = new createjs.SpriteSheet(ironSprite);
+            var irSprite = new createjs.SpriteSheet(ironsprite);
             //スプライトの設定
             var iron = new createjs.Sprite(irSprite,'stand');
             stage.addChild(iron);
