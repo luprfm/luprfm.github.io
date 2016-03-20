@@ -79,6 +79,21 @@ function init(){
 
     // ローディングスタート
     loadQueue.loadManifest(model);
+    var loadContainer = new createjs.Container();
+    stage.addChild(loadContainer);
+    var loadbg = new createjs.Shape();
+    loadimg.graphics.beginFill('#FFFFFF').drawRect(0,0,1024,768);
+    loadContainer.addChild(loadbg);
+    var loadimg = new createjs.Bitmap('img/loading.png');
+    loadContainer.addChild(loadimg);
+    loadimg.scaleX = 0.5;
+    loadimg.scaleY = 0.5;
+    loadimg.regX = 322;
+    loadimg.regY = 141;
+    loadimg.x = 512;
+    loadimg.y = 384;
+
+
     // 全部読み込み終わったら
     loadQueue.addEventListener('complete',function(){
         console.log('読み込み完了しました');
