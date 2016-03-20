@@ -101,6 +101,7 @@ function init(){
     loadQueue.addEventListener('complete',function(){
         console.log('読み込み完了しました');
         addStage();
+        stage.removeChild(loadContainer);
     });
 };
 
