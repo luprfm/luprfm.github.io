@@ -82,9 +82,10 @@ function init(){
     var loadContainer = new createjs.Container();
     stage.addChild(loadContainer);
 
-    var loadbg = new createjs.Shape();
-    loadbg.graphics.beginFill("#FFFFFF").drawRect(0,0,1024,768);
-    loadContainer.addChild(loadbg);
+    var loadbg = new createjs.Graphics().beginFill("#FFFFFF").drawRect(0,0,1024,768);
+    var loadShape = new createjs.Shape(loadbg);
+    loadContainer.addChild(loadShape);
+
 
     var loadimg = new createjs.Bitmap('img/loading.png');
     loadContainer.addChild(loadimg);
