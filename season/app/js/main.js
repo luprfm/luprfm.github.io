@@ -81,9 +81,11 @@ function init(){
     loadQueue.loadManifest(model);
     var loadContainer = new createjs.Container();
     stage.addChild(loadContainer);
+
     var loadbg = new createjs.Shape();
-    loadimg.graphics.beginFill('#FFFFFF').drawRect(0,0,1024,768);
+    loadbg.Graphics.beginFill('#FFFFFF').drawRect(0,0,1024,768);
     loadContainer.addChild(loadbg);
+
     var loadimg = new createjs.Bitmap('img/loading.png');
     loadContainer.addChild(loadimg);
     loadimg.scaleX = 0.5;
